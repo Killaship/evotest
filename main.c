@@ -5,7 +5,7 @@ int currpoint = 0;
 int run = 1;
 // atcg
 
-char* genome[16] = {
+char genome[16] = {
 	"A",
 	"A",
 	"A"
