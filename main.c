@@ -14,10 +14,9 @@ char* genome[16] = {
 void executeDNA() {
 
    
-	if(strcmp(codonbuff[currpoint], "AAA") == 0) {
+	if(strcmp(genome[currpoint], "AAA") == 0) {
 		run = 0;
 	}
-	printf(codonbuff);
 }
 	
 
