@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 int currpoint = 0;
-int genome = {
+int genome[16] = {
 	'A',
 	'A',
 	'T',
@@ -16,8 +16,8 @@ void executeDNA() {
 		printf("%d\n", i);
 		codonbuff[i] = genome[i];
 	}
-	for (int i = 0; i < 3; i++) {     
-        printf(codonbuff[i]);     
+	for (int a = 0; i < 3; a++;) {     
+        printf(codonbuff[a]);     
     	}      
 }
 	
