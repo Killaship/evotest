@@ -6,18 +6,15 @@ int run = 1;
 // atcg
 
 char* genome[16] = {
-	"A",
-	"A",
-	"A"
+	"AAA",
+	"AAA",
+	"AAA"
 };
 
 void executeDNA() {
-	char* codonbuff[4];
-	codonbuff[3] = '\0';
-	for (int i = 0; i < 3; i++) {  
-		codonbuff[i] = genome[i];  
-    	}      
-	if(strcmp(codonbuff, "AAA") == 0) {
+
+   
+	if(strcmp(codonbuff[currpoint], "AAA") == 0) {
 		run = 0;
 	}
 	printf(codonbuff);
