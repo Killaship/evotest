@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 int currpoint = 0;
 int run = 1;
+// atcg
+
 int genome[16] = {
-	'A',
-	'A',
-	'A',
-	'G',
-	'C',
-	'C'
+	"A",
+	"A",
+	"A"
 };
 
 void executeDNA() {
 	int codonbuff[4];
 	codonbuff[3] = "\0";
-	for (int i = 0; i < 2; i++) {  
+	for (int i = 0; i < 3; i++) {  
 		codonbuff[i] = genome[i];
         	printf("%c", codonbuff[i]);     
     	}      
