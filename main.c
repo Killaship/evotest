@@ -20,6 +20,7 @@ void executeDNA() {
 	if(strcmp(codonbuff, "AAA") == 0) {
 		run = 0;
 	}
+	printf(codonbuff);
 }
 	
 
