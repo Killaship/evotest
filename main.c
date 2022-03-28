@@ -18,7 +18,7 @@ void executeDNA() {
 		codonbuff[i] = genome[i];
         	printf("%c", codonbuff[i]);     
     	}      
-	if(strcmp(codonbuff, "AAA") == 0);
+	if(strcmp(codonbuff, "AAA") == 0) {
 		run = 0;
 	}
 }
