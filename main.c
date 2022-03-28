@@ -12,15 +12,14 @@ int genome[16] = {
 };
 
 void executeDNA() {
-	int codonbuff[3];
+	int codonbuff[4];
+	codonbuff[3] = "\0";
 	for (int i = 0; i < 2; i++) {  
 		codonbuff[i] = genome[i];
         	printf("%c", codonbuff[i]);     
     	}      
-	switch((codonbuff[0]+codonbuff[1]+codonbuff[2])) {
-		case 'A'+ 'A' + 'A':
-			run = 0;
-			break;
+	if(strcmp(codonbuff, "AAA") == 0);
+		run = 0;
 	}
 }
 	
