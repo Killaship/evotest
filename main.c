@@ -12,8 +12,8 @@ char* genome[16] = {
 };
 
 void executeDNA() {
-	char codonbuff[4];
-	codonbuff[3] = "\0";
+	char* codonbuff[4];
+	codonbuff[3] = '\0';
 	for (int i = 0; i < 3; i++) {  
 		codonbuff[i] = genome[i];  
     	}      
