@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 int currpoint = 0;
-int stop = 0;
+int run = 1;
 int genome[16] = {
 	'A',
 	'A',
@@ -19,14 +19,14 @@ void executeDNA() {
     	}      
 	switch((codonbuff[0]+codonbuff[1]+codonbuff[2])) {
 		case ('A' + 'A' + 'A'):
-			stop = 1;
+			run = 0;
 			break;
 	}
 }
 	
 
 int main() {
-	while(!stop) {
+	while(run) {
 		executeDNA();
 		currpoint++;
 	}
