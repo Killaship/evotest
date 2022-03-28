@@ -17,7 +17,7 @@ void executeDNA() {
 		codonbuff[i] = genome[i];
         	printf("%c", codonbuff[i]);     
     	}      
-	switch((codonbuff[0]+(codonbuff[1]+(codonbuff[2]) {
+	switch((codonbuff[0]+codonbuff[1]+codonbuff[2])) {
 		case ('A' + 'A' + 'A'):
 			stop = 1;
 			break;
