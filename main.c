@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 int currpoint = 0;
+int stop = 0;
 int genome[16] = {
 	'A',
 	'A',
